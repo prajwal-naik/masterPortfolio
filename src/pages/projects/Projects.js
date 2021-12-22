@@ -54,7 +54,7 @@ class Projects extends Component {
 
         <div className="repo-cards-div-main">
           {PublicationData.data.map((repo) => {
-            return <PublicationCard repo={repo} theme={theme} />;
+            return <PublicationCard key={repo.id} repo={repo} theme={theme} />;
           })}
         </div>
 
